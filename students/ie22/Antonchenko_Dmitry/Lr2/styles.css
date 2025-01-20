@@ -1,0 +1,127 @@
+/* Начальные стили для темной темы */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1f29, #3b3c51);
+    color: #fff;
+}
+
+.calculator {
+    width: 340px;
+    background: #292a37;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.display {
+    background: #1e1f29;
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.digit {
+    background: #43445a;
+    color: #fff;
+}
+
+.digit.zero {
+    grid-column: span 2;
+}
+
+.digit#btn_digit_000 {
+    background: #43445a;
+    color: #fff;
+}
+
+.operator {
+    background: #f39c12;
+    color: #fff;
+}
+
+.equal {
+    background: #27ae60;
+    color: #fff;
+    grid-column: span 2; /* Расширяем кнопку на два столбца */
+    font-size: 2rem; /* Увеличиваем размер текста */
+    padding: 20px; /* Увеличиваем внутренние отступы */
+}
+
+.action {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.function {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Стили для светлой темы */
+body.light-theme {
+    background: linear-gradient(135deg, #f8f4ff, #dcdce6);
+    color: #43445a;
+}
+
+body.light-theme .calculator {
+    background: #f8f4ff;
+    color: #43445a;
+}
+
+body.light-theme .display {
+    background: #f8f4ff;
+    color: #43445a;
+}
+
+body.light-theme .btn {
+    background: #e0e0e0;
+    color: #43445a;
+}
+
+body.light-theme .operator {
+    background: #f39c12;
+}
+
+body.light-theme .equal {
+    background: #27ae60;
+}
+
+body.light-theme .action {
+    background: #e74c3c;
+}
+
+body.light-theme .function {
+    background: #3498db;
+}
